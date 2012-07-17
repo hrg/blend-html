@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>89f61e5a-305d-452d-b2f0-f1c0dd59bc21</ProjectGuid>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>5.0.30514.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="default.html" />
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="images\1366x768.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo120x120.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="layout.css" />
+    <Content Include="photos\Argentina\03.jpg" />
+    <Content Include="photos\Argentina\04.jpg" />
+    <Content Include="photos\Argentina\05.jpg" />
+    <Content Include="photos\Argentina\06.jpg" />
+    <Content Include="photos\Argentina\07.jpg" />
+    <Content Include="photos\Argentina\08.jpg" />
+    <Content Include="photos\Argentina\09.jpg" />
+    <Content Include="photos\Argentina\10.jpg" />
+    <Content Include="photos\Argentina\11.jpg" />
+    <Content Include="photos\Argentina\12.jpg" />
+    <Content Include="photos\Argentina\13.jpg" />
+    <Content Include="photos\Argentina\14.jpg" />
+    <Content Include="photos\Argentina\15.jpg" />
+    <Content Include="photos\Argentina\16.jpg" />
+    <Content Include="photos\Argentina\17.jpg" />
+    <Content Include="photos\Argentina\18.jpg" />
+    <Content Include="photos\Argentina\19.jpg" />
+    <Content Include="photos\Argentina\20.jpg" />
+    <Content Include="photos\Argentina\21.jpg" />
+    <Content Include="photos\Argentina\22.jpg" />
+    <Content Include="photos\Argentina\23.jpg" />
+    <Content Include="photos\Argentina\24.jpg" />
+    <Content Include="photos\Argentina\25.jpg" />
+    <Content Include="photos\Argentina\26.jpg" />
+    <Content Include="photos\Argentina\27.jpg" />
+    <Content Include="photos\Argentina\28.jpg" />
+    <Content Include="photos\Argentina\29.jpg" />
+    <Content Include="photos\Argentina\30.jpg" />
+    <Content Include="photos\Argentina\31.jpg" />
+    <Content Include="photos\Argentina\32.jpg" />
+    <Content Include="photos\China\01.jpg" />
+    <Content Include="photos\China\02.jpg" />
+    <Content Include="photos\China\03.jpg" />
+    <Content Include="photos\China\04.jpg" />
+    <Content Include="photos\China\05.jpg" />
+    <Content Include="photos\China\06.jpg" />
+    <Content Include="photos\China\07.jpg" />
+    <Content Include="photos\China\08.jpg" />
+    <Content Include="photos\China\09.jpg" />
+    <Content Include="photos\China\10.jpg" />
+    <Content Include="photos\China\11.jpg" />
+    <Content Include="photos\China\12.jpg" />
+    <Content Include="photos\China\13.jpg" />
+    <Content Include="photos\China\14.jpg" />
+    <Content Include="photos\China\15.jpg" />
+    <Content Include="photos\China\16.jpg" />
+    <Content Include="photos\China\17.jpg" />
+    <Content Include="photos\China\18.jpg" />
+    <Content Include="photos\China\19.jpg" />
+    <Content Include="photos\China\20.jpg" />
+    <Content Include="photos\China\21.jpg" />
+    <Content Include="photos\China\22.jpg" />
+    <Content Include="photos\China\23.jpg" />
+    <Content Include="photos\China\24.jpg" />
+    <Content Include="photos\China\25.jpg" />
+    <Content Include="photos\China\26.jpg" />
+    <Content Include="photos\China\27.jpg" />
+    <Content Include="photos\China\28.jpg" />
+    <Content Include="photos\China\29.jpg" />
+    <Content Include="photos\China\30.jpg" />
+    <Content Include="photos\China\31.jpg" />
+    <Content Include="photos\China\32.jpg" />
+    <Content Include="photos\default\01.jpg" />
+    <Content Include="photos\default\02.jpg" />
+    <Content Include="photos\default\03.jpg" />
+    <Content Include="photos\default\04.jpg" />
+    <Content Include="photos\default\05.jpg" />
+    <Content Include="photos\default\06.jpg" />
+    <Content Include="photos\default\07.jpg" />
+    <Content Include="photos\default\08.jpg" />
+    <Content Include="photos\default\09.jpg" />
+    <Content Include="photos\default\10.jpg" />
+    <Content Include="photos\default\11.jpg" />
+    <Content Include="photos\default\12.jpg" />
+    <Content Include="photos\default\13.jpg" />
+    <Content Include="photos\default\14.jpg" />
+    <Content Include="photos\default\15.jpg" />
+    <Content Include="photos\default\16.jpg" />
+    <Content Include="photos\default\17.jpg" />
+    <Content Include="photos\default\18.jpg" />
+    <Content Include="photos\default\19.jpg" />
+    <Content Include="photos\default\20.jpg" />
+    <Content Include="photos\default\21.jpg" />
+    <Content Include="photos\default\22.jpg" />
+    <Content Include="photos\default\23.jpg" />
+    <Content Include="photos\default\24.jpg" />
+    <Content Include="photos\default\25.jpg" />
+    <Content Include="photos\default\26.jpg" />
+    <Content Include="photos\default\27.jpg" />
+    <Content Include="photos\default\28.jpg" />
+    <Content Include="photos\default\29.jpg" />
+    <Content Include="photos\default\30.jpg" />
+    <Content Include="photos\default\31.jpg" />
+    <Content Include="photos\default\32.jpg" />
+    <Content Include="photos\India\01.jpg" />
+    <Content Include="photos\India\02.jpg" />
+    <Content Include="photos\India\03.jpg" />
+    <Content Include="photos\India\04.jpg" />
+    <Content Include="photos\India\05.jpg" />
+    <Content Include="photos\India\06.jpg" />
+    <Content Include="photos\India\07.jpg" />
+    <Content Include="photos\India\08.jpg" />
+    <Content Include="photos\India\09.jpg" />
+    <Content Include="photos\India\10.jpg" />
+    <Content Include="photos\India\11.jpg" />
+    <Content Include="photos\India\12.jpg" />
+    <Content Include="photos\India\13.jpg" />
+    <Content Include="photos\India\14.jpg" />
+    <Content Include="photos\India\15.jpg" />
+    <Content Include="photos\India\16.jpg" />
+    <Content Include="photos\India\17.jpg" />
+    <Content Include="photos\India\18.jpg" />
+    <Content Include="photos\India\19.jpg" />
+    <Content Include="photos\India\20.jpg" />
+    <Content Include="photos\India\21.jpg" />
+    <Content Include="photos\India\22.jpg" />
+    <Content Include="photos\India\23.jpg" />
+    <Content Include="photos\India\24.jpg" />
+    <Content Include="photos\India\25.jpg" />
+    <Content Include="photos\India\26.jpg" />
+    <Content Include="photos\India\27.jpg" />
+    <Content Include="photos\India\28.jpg" />
+    <Content Include="photos\India\29.jpg" />
+    <Content Include="photos\India\30.jpg" />
+    <Content Include="photos\India\31.jpg" />
+    <Content Include="photos\India\32.jpg" />
+    <Content Include="photos\Mexico\01.jpg" />
+    <Content Include="photos\Mexico\02.jpg" />
+    <Content Include="photos\Mexico\03.jpg" />
+    <Content Include="photos\Mexico\04.jpg" />
+    <Content Include="photos\Mexico\05.jpg" />
+    <Content Include="photos\Mexico\06.jpg" />
+    <Content Include="photos\Mexico\07.jpg" />
+    <Content Include="photos\Mexico\08.jpg" />
+    <Content Include="photos\Mexico\09.jpg" />
+    <Content Include="photos\Mexico\10.jpg" />
+    <Content Include="photos\Mexico\11.jpg" />
+    <Content Include="photos\Mexico\12.jpg" />
+    <Content Include="photos\Mexico\13.jpg" />
+    <Content Include="photos\Mexico\14.jpg" />
+    <Content Include="photos\Mexico\15.jpg" />
+    <Content Include="photos\Mexico\16.jpg" />
+    <Content Include="photos\Mexico\17.jpg" />
+    <Content Include="photos\Mexico\18.jpg" />
+    <Content Include="photos\Mexico\19.jpg" />
+    <Content Include="photos\Mexico\20.jpg" />
+    <Content Include="photos\Mexico\21.jpg" />
+    <Content Include="photos\Mexico\22.jpg" />
+    <Content Include="photos\Mexico\23.jpg" />
+    <Content Include="photos\Mexico\24.jpg" />
+    <Content Include="photos\Mexico\25.jpg" />
+    <Content Include="photos\Mexico\26.jpg" />
+    <Content Include="photos\Mexico\27.jpg" />
+    <Content Include="photos\Mexico\28.jpg" />
+    <Content Include="photos\Mexico\29.jpg" />
+    <Content Include="photos\Mexico\30.jpg" />
+    <Content Include="photos\Mexico\31.jpg" />
+    <Content Include="photos\Mexico\32.jpg" />
+    <Content Include="photos\Zoo\01.jpg" />
+    <Content Include="photos\Zoo\02.jpg" />
+    <Content Include="photos\Zoo\03.jpg" />
+    <Content Include="photos\Zoo\04.jpg" />
+    <Content Include="photos\Zoo\05.jpg" />
+    <Content Include="photos\Zoo\06.jpg" />
+    <Content Include="photos\Zoo\07.jpg" />
+    <Content Include="photos\Zoo\08.jpg" />
+    <Content Include="photos\Zoo\09.jpg" />
+    <Content Include="photos\Zoo\10.jpg" />
+    <Content Include="photos\Zoo\11.jpg" />
+    <Content Include="photos\Zoo\12.jpg" />
+    <Content Include="photos\Zoo\13.jpg" />
+    <Content Include="photos\Zoo\14.jpg" />
+    <Content Include="photos\Zoo\15.jpg" />
+    <Content Include="photos\Zoo\16.jpg" />
+    <Content Include="photos\Zoo\17.jpg" />
+    <Content Include="photos\Zoo\18.jpg" />
+    <Content Include="photos\Zoo\19.jpg" />
+    <Content Include="photos\Zoo\20.jpg" />
+    <Content Include="photos\Zoo\21.jpg" />
+    <Content Include="photos\Zoo\22.jpg" />
+    <Content Include="photos\Zoo\23.jpg" />
+    <Content Include="photos\Zoo\24.jpg" />
+    <Content Include="photos\Zoo\25.jpg" />
+    <Content Include="photos\Zoo\26.jpg" />
+    <Content Include="photos\Zoo\27.jpg" />
+    <Content Include="photos\Zoo\28.jpg" />
+    <Content Include="photos\Zoo\29.jpg" />
+    <Content Include="photos\Zoo\30.jpg" />
+    <Content Include="photos\Zoo\31.jpg" />
+    <Content Include="photos\Zoo\32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0.RC, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

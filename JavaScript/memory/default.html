@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>memory</title>
+
+    <!-- WinJS references -->
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+
+    <!-- memory references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+	<div id="gameBody">
+		<h1 id="gameTitle">memory</h1>
+		<p id="gameTagline">jog your memory - find matching cards as fast as you can</p>
+		<div id="settings">
+			<div id="startStop">
+				<input id="startGame" type="button" value="Start the Game"/>
+				<input id="stopGame" type="button" value="Stop the Game"/>
+			</div>
+			<div id="gameSize" class="settings">
+				<h3>Game Size: </h3>
+				<div>
+					<form id="sizeForm" name="size">
+						<input id="size4x4" name="size4x4" type="radio" value="4" checked/>4x4
+						<input id="size6x6" name="size6x6" type="radio" value="6" />6x6
+						<input id="size8x8" name="size8x8" type="radio" value="8" />8x8
+					</form>
+				</div>
+			</div>
+			<input id="selectCards" type="button" value="Select Card Style"/>
+		</div>
+		<div id="stats">
+			<div id="time" class="timer">
+				<h3 id="timeLabel">Time: </h3>
+				<div id="timeDisplay" class="values">00:00</div>
+			</div>
+			<div id="score" class="score">
+				<div id="found" class="found hBox">
+					<h3>Found: </h3>
+					<div id="foundDisplay" class="values">0</div>
+				</div>
+				<div id="attempts" class="attempts hBox">
+					<h3>Attempts: </h3>
+					<div id="attemptsDisplay" class="values">0</div>
+				</div>
+			</div>
+		</div>
+		<div id="gameBoard"></div>
+	</div>
+	<div id="cardTemplate" style="width: 300px; height: 200px; display: none;" data-win-design-hidden="true">
+		<p></p>
+	</div>
+	<div id="popupHolder" class="closeImagePopup" data-win-design-hidden="true">
+		<div id="popupFrame">
+			<img src="" id="popupImage"/>
+		</div>
+	</div>
+
+	<div id="deckSelectionFlyout" class="hidden" data-win-design-hidden="true">
+		<img id="deckSelectionBg" alt="1366x768" src="/images/1366x768.png">
+		<h1 id="deckSelectionTitle">memory</h1>
+		<p id="deckSelectionTagline">select a deck of cards</p>
+		<div id="deckTemplate" class="itemTemplate" data-win-control="WinJS.Binding.Template">
+			<div class="deckItemContainer">
+				<img data-win-bind="src:thumbnail" src="" alt="" />
+				<p data-win-bind="textContent:name"></p>
+			</div>
+		</div>
+		<div id="deckList" class="itemList"
+			data-win-control="WinJS.UI.ListView" 
+			data-win-options="{layout: {type: WinJS.UI.ListLayout}, selectionMode: 'none', dataSource: decks, itemRenderer: deckTemplate, tap : 'invoke',  crossslide: 'none' }"></div>
+    </div>
+<!---->
+</body>
+</html>

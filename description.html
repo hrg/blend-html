@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Blend for Visual Studio Memory game tutorial files</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Javascript, HTML5, Metro style app
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            How to
+                        </div>
+                    </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">5/31/2012</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Blend-for-Visual-Studio-5ab695de">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>The Blend for Visual Studio memory game sample project contains the files required to begin the tutorial described in &quot;<a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh452659.aspx">Design your first Metro style app built using HTML</a>.&quot;&nbsp;The
+ tutorial demonstrates how Blend for Visual Studio 2012 Release Candidate can be used to visually design a Metro style app, including using Interactive Mode to create styles for states that are only reachable through user interaction with the app.</p>
+<p><strong>Note </strong>The Windows Samples Gallery contains a variety of code samples that exercise the various new programming models, platforms, features, and components available in Windows 8 Release Candidate and/or Windows Server &quot;8&quot; Release Candidate.
+ These downloadable samples are provided as compressed ZIP files that contain a Visual Studio solution (SLN) file for the sample, along with the source files, assets, resources, and metadata necessary to successfully compile and run the sample. For more information
+ about the programming models, platforms, languages, and APIs demonstrated in this sample, please refer to the guidance, tutorials, and reference topics provided in the Windows 8 documentation available in the Windows Developer Center. This sample is provided
+ as-is in order to indicate or demonstrate the functionality of the programming models and feature APIs for Windows 8 Release Candidate and/or Windows Server &quot;8&quot; Release Candidate. Please provide feedback on this sample!</p>
+<p>To obtain an evaluation copy of Windows 8 Release Candidate, go to <a href="http://go.microsoft.com/fwlink/?LinkId=241655">
+Windows 8 Release Candidate</a>.<br>
+&nbsp;<br>
+To obtain an evaluation copy of Microsoft Visual Studio 2012 Release Candidate, go to
+<a href="http://go.microsoft.com/fwlink/?LinkId=241656">Visual Studio 2012 Release Candidate</a>.</p>
+<h1><span>Building the Sample</span></h1>
+<p>After you download the memory project, unzip the folder, and extract all of the files.<br>
+Browse to the directory in which you unzipped the sample. Open the <strong>memory</strong> folder and double-click
+<strong>memory.sln</strong>.</p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p>This tutorial creates a lightweight, dynamic version of the memory game commonly referred to as &quot;Concentration.&quot; In the game, a number of cards are laid face down. The objective of the game is to turn over pairs of matching cards until all of the matching
+ pairs have been revealed.</p>
+<p>The tutorial is based on a project that began with a developer who, working in Visual Studio 2012&nbsp;Express Release Candidate, defined the sematic structure as HTML markup, and game logic developed using JavaScript.</p>
+<p>The task in this tutorial is to use the design surface of Blend to complete the layout and styling tasks for a simple game app.</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

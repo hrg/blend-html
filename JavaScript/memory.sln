@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "memory", "memory\memory.jsproj", "{89f61e5a-305d-452d-b2f0-f1c0dd59bc21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89F61E5A-305D-452D-B2F0-F1C0DD59BC21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F61E5A-305D-452D-B2F0-F1C0DD59BC21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F61E5A-305D-452D-B2F0-F1C0DD59BC21}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{89F61E5A-305D-452D-B2F0-F1C0DD59BC21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F61E5A-305D-452D-B2F0-F1C0DD59BC21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F61E5A-305D-452D-B2F0-F1C0DD59BC21}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
